@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<item android:title="sort by">
+
+    <menu>
+        <item
+            android:title="name"
+            android:id="@+id/name"
+            >
+        </item>
+        <item
+            android:id="@+id/CNIC"
+            android:title="CNIC"
+            >
+
+        </item>
+    </menu>
+</item>
+
+
+</menu>

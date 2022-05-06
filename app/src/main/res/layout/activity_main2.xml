@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:text="Test Details"
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/second_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_text"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="right"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_700"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/left_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="left"
+            android:textAllCaps="true"
+            android:textColor="#75133C8E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:id="@+id/table_right"
+        android:visibility="visible"
+        >
+
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SPH"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CYL"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Axis"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="D.V"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign00"
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right sph"
+                    android:id="@+id/revalue00"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign01"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right cvl"
+                    android:id="@+id/revalue01"
+                    android:inputType="number"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign02"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right axis"
+                    android:id="@+id/revalue02"
+                    android:inputType="number"
+
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="D.V"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign10"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right sph"
+                    android:id="@+id/revalue10"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign11"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right cyl"
+                    android:id="@+id/revalue11"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/resign12"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="right axis"
+                    android:id="@+id/revalue12"
+                    android:inputType="number"
+
+                    />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_centerInParent="true"
+        android:id="@+id/table_left"
+        android:visibility="gone"
+        >
+
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SPH"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CYL"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Axis"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+
+
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="D.V"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/sign00"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"
+
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_sph"
+                    android:inputType="number"
+                    android:id="@+id/value00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/sign01"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_cyl"
+                    android:inputType="number"
+
+                    android:id="@+id/value01"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/sign02"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_axis"
+                    android:id="@+id/value02"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="N.V"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"
+                    android:id="@+id/sign10"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_sph"
+                    android:id="@+id/value10"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/sign11"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_cyl"
+                    android:id="@+id/value11"
+                    android:inputType="number"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/sign12"
+
+                    android:textSize="25sp"
+                    android:textColor="@color/purple_700"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="left_axis"
+                    android:id="@+id/value12"
+                    android:inputType="number"
+
+
+
+                    />
+            </LinearLayout>
+
+        </TableRow>        <!--    <TableRow>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="CVX"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textAllCaps="true"-->
+        <!--            />-->
+        <!--        <EditText-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="left_cvx"-->
+
+        <!--            android:inputType="numberDecimal"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp" />-->
+        <!--        <EditText-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="Right CVX"-->
+
+        <!--            android:inputType="numberDecimal"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp" />-->
+        <!--    </TableRow>-->
+        <!--    <TableRow>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="CVX"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textAllCaps="true"-->
+        <!--            />-->
+        <!--        <EditText-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="left_cvx"-->
+
+        <!--            android:inputType="numberDecimal"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp" />-->
+        <!--        <EditText-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="Right CVX"-->
+
+        <!--            android:inputType="numberDecimal"-->
+        <!--            android:textColor="@color/purple_700"-->
+        <!--            android:textSize="15sp" />-->
+        <!--    </TableRow>-->
+    </TableLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="50sp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

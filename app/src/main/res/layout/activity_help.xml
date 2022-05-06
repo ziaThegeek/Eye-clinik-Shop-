@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help"
+    android:orientation="vertical"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5sp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#8A000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="\twelcome to help desk\n first of all you have to create account for accessing your app  .For that you have to provide\n1\tFirst name and last name\n2\t which is alphanumeric like (Farooqi8123)\n3\tContact No ie.99999999999 \n4\tYour numeric password of 8 digit length \n\t After registration you have to login by providing you username and password .\n\tIn case if you forgot your username or password you can recover your account by clicking on forget username or password this will send you an  one time password(OTP) after confirming your otp you can reset your username or password\n\t on first page you find four buttons  labeling \n1\t Add person\n2\tPerson details\n3\tHelp\n4\t Logout\n->On add person button you have to provide following values \n1\timage of person(optional)\n2\tName of person\n3\tCNIC of person \n4\tContact No(Optional)\n5\tMedical details(SPH,CVL,AXIS) Optional\n->On person details you can \n\tView person details\n\tUpdate person details \n\tDelete person details \nltOn logout button you can logut from app for some temporary time If you have any further queries you contact us from following links"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingVertical="20sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/contact"
+            android:background="@drawable/round_corners"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:text="03414657341"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/phone1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/contact"
+            android:background="@drawable/round_corners"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:text="03037842278"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="30sp"
+            android:id="@+id/phone2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="infinte.studios.support@gmail.com"
+            android:background="@drawable/round_corners"
+            android:paddingVertical="10sp"
+            android:paddingHorizontal="5sp"
+            android:drawableLeft="@drawable/mail"
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/mail"
+            android:layout_marginTop="20sp"
+            />
+
+    </LinearLayout>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:text="Thanks for using Faroooqi Optics"
+       android:layout_gravity="center"
+       android:textSize="20sp"
+       android:padding="10sp"
+       android:textColor="@color/purple_700"
+       android:textStyle="bold"
+
+       />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
